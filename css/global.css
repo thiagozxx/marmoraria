@@ -1,0 +1,68 @@
+@import url(/css/banner.css);
+@import url(/css/services.css);
+@import url(/css/quemsomos.css);
+@import url(/css/diferencial.css);
+@import url(/css/footer.css);
+@import url(/css/carrosuelcard.css);
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+}
+
+.title-global{
+    font-weight: normal;
+}
+
+
+
+.global-paragraph{
+    font-weight: 100;
+}
+
+.creative-text-layout {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+}
+
+.text-main {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: black;
+    margin: 0;
+    position: relative;
+    left: 0;
+    z-index: 2;
+}
+
+.text-secondary {
+    font-size: 3rem;
+    font-weight: bold;
+    color: rgba(133, 131, 131, 0.8);
+    margin: 0;
+    position: relative;
+    top: -30px;
+    left: 50px;
+    z-index: 1;
+    transform: rotate(-5deg);
+}
+
+@media (max-width: 768px) {
+    .text-main,
+    .text-secondary{
+        font-size: 2.6rem;
+    }
+
+    .text-secondary{
+        left: 10px;
+    }
+}

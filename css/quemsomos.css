@@ -1,0 +1,44 @@
+.who-us{
+    padding: 1em 1.5rem 1em;
+    max-width: 1250px;
+    margin: 5rem auto;
+}
+
+.mobile{
+    display: none;
+}
+
+
+.whous-box{
+    display: flex;
+    padding: 1em;
+    gap: 3em;
+}
+
+.who-us img{
+    max-height: 427px;
+}
+
+.who-us-p{
+    margin-block: 2rem;
+}
+
+.global-paragraph{
+    font-weight: 300;
+}
+
+@media (max-width: 768px) {
+    .whous-box{
+        flex-direction: column;
+    }
+
+    .mobile{
+        display: block;
+        text-align: center;
+        margin-block: 3rem;
+    }
+
+    .desktop{
+        display: none;
+    }
+ }
