@@ -1,16 +1,18 @@
-const menuToggle = document.querySelector(".menu-toggle");
-const menu = document.querySelector(".menu");
-
-// Função para abrir/fechar o menu ao clicar no botão
-menuToggle.addEventListener("click", function (event) {
-  event.stopPropagation(); // Impede que o clique no botão feche o menu
-  menu.classList.toggle("open");
+window.addEventListener('scroll', function() {
+  const header = document.querySelector('.init');
+  
+  if (window.scrollY > 68) {
+    header.classList.add('fixed');
+  } else {
+    header.classList.remove('fixed');
+  }
 });
 
-// Fecha o menu ao clicar fora dele
-document.addEventListener("click", function (event) {
-  const isClickInside = menu.contains(event.target) || menuToggle.contains(event.target);
-  if (!isClickInside) {
-    menu.classList.remove("open");
-  }
+// Funcionalidade do menu hambúrguer para dispositivos móveis
+const menuToggle = document.querySelector('.menu-toggle');
+const menu = document.querySelector('.menu');
+
+// Abre ou fecha o menu quando o botão for clicado
+menuToggle.addEventListener('click', function() {
+  menu.classList.toggle('open');
 });

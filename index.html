@@ -15,13 +15,8 @@
 
 <body>
     <header class="init">
-        <img src="/img/logo.png" alt="Logo" class="logo">
-        <div class="tooglemenu">
-            <!-- Botão de Menu -->
+            <img src="/img/logo.png" alt="Logo" class="logo">
             <button class="menu-toggle" aria-label="Abrir Menu">&#9776;</button>
-        </div>
-
-        <!-- Menu -->
         <nav>
             <ul class="menu">
                 <li><a href="#">HOME</a></li>
@@ -44,12 +39,11 @@
     </div>
 
 
-    <main>
+    <main id="smooth-wrapper">
         <div class="creative-text-layout">
-            <h1 class="text-main">Produtos e</h1>
-            <h1 class="text-secondary">Serviços</h1>
+            <h1 class="text-main">Produtos</h1>
         </div>
-        <div class="services">
+        <div class="services" id="smooth-content">
             <div class="service-box">
                 <img src="/img/marmore-cozinha.jpg" alt="pia de marmore para cozinha">
                 <h3 class="service-title">Pia de Marmore para cozinha</h3>
@@ -85,7 +79,7 @@
         <div class="who-us">
             <h1 class="mobile">Quem Somos</h1>
             <div class="whous-box">
-                <img src="/img/quemsomos.png" alt="">
+                <img src="/img/quemsomos.png" alt=""  class="who-us-img">
                 <div class="who-us-content">
                     <h1 class="desktop">Quem Somos</h1>
                     <div class="who-us-p">
@@ -194,8 +188,20 @@
         </div>
     </footer>
 
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Flip.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Observer.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Draggable.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/MotionPathPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/EaselPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/PixiPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
 
     <script src="/js/menuhamburger.js"></script>
+    <script src="/js/gsap.js"></script>
     <script class="carrosuelcard.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
         integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
